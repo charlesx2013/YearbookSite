@@ -1,0 +1,210 @@
+@import 'foundation';
+/* main page */
+html * {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+.main {
+  width: 100%;
+  height: auto;
+  .main-orbit {
+    height: auto;
+    margin-top: -5%;
+  }
+  .second {
+    height: auto;
+    background-color: #45ADA8;
+  }
+  .third {
+    height: auto;
+    background-color: #555555;
+  }
+  .fourth {
+    height: auto;
+    background-color: #0099CC;
+  }
+}
+
+.main-box{
+  height: 100%;
+  padding-top: 6%;
+  text-align: center;  
+  .main-headline {
+    font-size: 5em;
+    color: white;
+  }
+  .main-subhead { 
+    margin-top: -3%;
+    color: white;
+  }
+}
+/* main page orbit */
+
+
+.pic1 {
+  height: .2*3000px;
+  background-image: url('http://www.ewallpapers.eu/w_show/blue-city-1920-1200-2201.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+
+.pic2 {
+  height: .2*3000px;
+  background-image: url('http://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Wiktionary_small.svg/350px-Wiktionary_small.svg.png');
+  background-size:cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.main-button {
+  @include button($button-lrg, #357AE8, false, false, false, false);
+}
+
+
+.subsect-box {
+  padding-top: 3%;
+  text-align: center;
+  .subsect-head {
+    color: white;
+    font-size: 4em;
+  }
+}
+
+/* about sction */
+
+.about-circle {
+    width: 250px;
+    height:0;
+    padding-bottom: 250px;
+    -moz-border-radius: 100%; 
+    -webkit-border-radius: 100%; 
+    border-radius: 100%;
+    background-size: cover;
+    background: url('http://www.ewallpapers.eu/w_show/blue-city-1920-1200-2201.jpg') no-repeat; 
+}
+
+
+#about-text-align {
+  color: white;
+  font-size: 1.5em;
+}
+
+#about-text {
+  padding-top: 1%;
+}
+
+#about-picture-align {
+  padding-bottom: 8%;
+}
+
+#about-content {
+  padding-top: -5%
+}
+
+
+/* buy section */
+.circle-align {
+  text-align:center;
+  padding-top: 5%;
+  padding-bottom: 4%;
+}
+
+.circle-padding {
+  padding-bottom: 9%;
+  text-align: center;
+}
+
+#buy-circle {
+  width: 150px;
+  height: 0;
+  padding-bottom: 150px;
+  -moz-border-radius: 50%; 
+  -webkit-border-radius: 50%; 
+  border-radius: 50%;
+  background: #00628B; 
+  color: white;
+  text-align: center;
+  .number {
+    padding-top: 13%;
+    padding-bottom: 5%;
+  }
+  div {
+    font-family: 'Oswald', sans-serif;
+  }
+}
+
+.text {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.buy-headline {
+  color:white;
+  text-align: center;
+}
+
+.buy-subhead {
+  padding-top: -10%;
+  padding-bottom: 10%;
+  text-align: center;
+  font-size: 1em;
+  color:white;
+  text-align: center;
+
+}
+
+
+#days, #hr, #min, #sec {
+  font-weight: 700;
+  font-size: 5em;
+}
+
+/* application section */
+
+.apply-headline {
+  color:white;
+  font-size: 2em;
+  text-align: center;
+}
+
+.apply-subhead {
+  color:white;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.apply-link-container {
+  text-align: center;
+}
+
+.apply-link {
+  height: 10%;
+  width: 10%;
+  text-align: white;
+  text-align: center
+}
+
+.apply-button {
+  @include button($button-lrg, #E86C08, false, false, false, false);
+}
+
+
+
+/* media queries */
+
+.sampleClass {
+  float: right;
+}
+
+@media only screen and (max-width: 700px){
+
+  .sampleClass {
+    float: left;
+  }
+}
